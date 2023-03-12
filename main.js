@@ -14,12 +14,18 @@ function printInput() {
         chances++;
         document.getElementById("output").innerHTML = "The number is lower";
     }
-    else {
+    else if(x==number){
         chances++;
         document.getElementById("output").innerHTML = "";
         document.getElementById("times").innerHTML = "You guessed the number in " + chances + " attempts.";
         $(document).ready(function () {
             $("#myModal").modal("show");
+        });
+    }
+    else{
+        document.getElementById("output").innerHTML = "";
+        $(document).ready(function () {
+            $("#myModal2").modal("show");
         });
     }
 }
