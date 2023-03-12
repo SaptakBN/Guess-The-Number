@@ -1,0 +1,33 @@
+.box {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.heading {
+    font-family: 'Lilita One', cursive;
+}
+
+input[type=number] {
+    padding: 10px 0px;
+    outline: 5px solid rgb(70, 118, 179);
+    border: none;
+}
+
+input[type=number]:focus {
+    outline: 5px solid rgb(119, 189, 230);
+    transition: 0.4s ease-in-out;
+}
+
+
+
+#number {
+    box-shadow: 10px 10px 20px rgb(100, 131, 183);
+}
+
+.modal-title {
+    color: rgb(43, 97, 159);
+    text-shadow: 2px 2px 5px rgb(82, 89, 160);
+}

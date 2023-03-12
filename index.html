@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Lilita+One&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-info-subtle">
+    <div class="box justify-content-center text-center position-relative">
+        <h1 class="heading display-1 text-primary-emphasis my-md-2 my-3 py-md-2 py-3 mt-lg-4 py-lg-4">Guess The Number</h1>
+        <h5 class="text-muted px-3">Guess a Number between 1 and 100, follow the hints and win</h5>
+        <div class="container-fluid position-absolute top-50 start-50 translate-middle">
+            <input type="number" min="1" max="100" id="number" name="number" placeholder="Put Your Guess"
+                class="mb-3 rounded-3 border-dark-subtle text-muted fs-1 text-center h-100 w-75" /><br />
+            <input type="button" id="myBtn" class="rounded-5 btn btn-outline-primary p-3 my-5 fw-bold" value="Guess The Number"
+                onclick="printInput()" />
+            <h6 id="output"
+                class="animate__animated animate__flash animate__infinite 	infinite fst-italic text-danger py-4"></h6>
+
+            <div class="container text-muted">
+                <p>&copy; Saptak Banerjee 2023</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content text-center py-4 bg-light rounded-5">
+                <div class="modal-header p-3 d-flex flex-column">
+                    <img src="img/done.png" width="50px" alt="">
+                    <h1 id="result"
+                        class="fw-bolder text-success w-100 text-center py-2 animate__animated animate__tada modal-title">
+                        Congratulations</h1>
+                </div>
+                <div class="modal-body p-3">
+                    <h4 class="modal-title">You Guessed Correctly</h4>
+                    <h6 class="py-3 text-warning-emphasis"><span id="times"></span></h6>
+                    <button type="button" class="btn btn-dark"><a href="index.html"
+                            class="text-decoration-none text-white">Play Again</a></button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
